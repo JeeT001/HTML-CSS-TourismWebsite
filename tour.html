@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/dc02f5f2e2.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Tour</title>
+    <style>
+      * {
+        padding: 0%;
+        margin: 0%;
+      }
+      .header {
+        display: flex;
+        background-color: rgb(67, 98, 173);
+        align-content: center;
+        justify-content: space-between;
+      }
+      .header div {
+        padding: 5px 40px;
+      }
+      .logo img {
+        width: 200px;
+        margin-left: 40px;
+      }
+
+      .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        font-size: 22px;
+        text-decoration: none;
+        margin-right: 70px;
+      }
+
+      .menu a {
+        padding: 0px 50px;
+        text-decoration: none;
+        color: black;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 30px;
+
+        padding: 10px;
+
+        height: auto;
+      }
+
+      .grid-container > div {
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+      }
+
+      .item1 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+
+      .footer {
+        display: block;
+        width: 100%;
+        height: 110px;
+        background-color: rgb(67, 98, 173);
+      }
+
+      .fs {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0px 20px 0px;
+      }
+
+      .fs i {
+        padding: 0px 20px;
+        font-size: 30px;
+        color: black;
+      }
+
+      .ftext {
+        display: flex;
+        justify-content: center;
+      }
+
+      @media only screen and (max-width: 1000px) {
+        .sec {
+          flex-wrap: wrap;
+        }
+
+        .header {
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+        }
+        .menu {
+          margin-left: 50px;
+          flex-wrap: wrap;
+          padding: 0px 40px;
+          margin-left: 60px;
+        }
+
+        .grid-container {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo"><img src="img/logo2.png" alt="" /></div>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tour.html">Tour</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <a href="https://www.facebook.com/"
+            ><i class="fa-brands fa-square-facebook"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="grid-container">
+      <div class="item1">
+        <h3>
+          Escorted New Zealand Coach Holidays The ultimate in hassle-free
+          travel, an escorted coach tour is a great choice.
+        </h3>
+      </div>
+
+      <div class="item2">
+        <img src="img/800x500-kirra-bus__w380_w.jpg" alt="" />
+        <h6>
+          Tours of the South Island See our selection of South Island escorted
+          coach tours
+        </h6>
+      </div>
+      <div class="item3">
+        <img src="img/aat-kings-coach-and-crew__w380_w.jpg" alt="" />
+        <h6>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium
+          corrupti saepe, dolore similique voluptates fugit sequi soluta
+          voluptate?
+        </h6>
+      </div>
+      <div class="item4">
+        <img src="img/aucland-city-skyline__w380_w.jpg" alt="" />
+        <h6>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+          veniam, sunt omnis alias vel commodi reprehenderit atque molestiae.
+        </h6>
+      </div>
+      <div class="item5">
+        <img src="img/grand-pac-ulitmate-coach-interior__w380_w.jpg" alt="" />
+        <h6>
+          GP Ultimate Small Groups Limited passenger numbers, 'business class'
+          coaches and great inclusions with Grand Pacific Tours Ultimate range.
+        </h6>
+      </div>
+      <div class="item6">
+        <img src="img/grand-pacfic-escorted-coach-tour_1__w380_w.jpg" alt="" />
+        <h6>
+          Grand Pacific Tours Grand Pacific Tours offer a great range of best
+          selling New Zealand escorted tours & itineraries.
+        </h6>
+      </div>
+      <div class="item7">
+        <img src="img/trafalgar-tours-group__w380_w.jpg" alt="" />
+        <h6>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+          mollitia quo odio distinctio facere veniam quisquam cum assumenda.
+        </h6>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <div class="fs">
+          <a href="https://www.facebook.com/"
+            ><i class="fa-brands fa-square-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/"
+            ><i class="fa-brands fa-square-instagram"></i
+          ></a>
+
+          <a href="https://www.linkedin.com/login"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+        <p class="ftext">© Copyright 2022 TravelNZ | info@TravelNZ.com</p>
+      </div>
+    </footer>
+  </body>
+</html>

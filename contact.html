@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/dc02f5f2e2.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>TravelNZ</title>
+    <style>
+      * {
+        padding: 0%;
+        margin: 0%;
+      }
+      .header {
+        display: flex;
+        background-color: rgb(67, 98, 173);
+        align-content: center;
+        justify-content: space-between;
+      }
+      .header div {
+        padding: 5px 40px;
+      }
+      .logo img {
+        width: 200px;
+        margin-left: 40px;
+      }
+
+      .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        font-size: 22px;
+        text-decoration: none;
+        margin-right: 70px;
+      }
+
+      .menu a {
+        padding: 0px 50px;
+        text-decoration: none;
+        color: black;
+      }
+
+      .mid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+      }
+
+      .mid div {
+        padding: 50px 50px;
+      }
+
+      .contact h1 {
+        padding: 10px;
+      }
+
+      .footer {
+        display: block;
+        width: 100%;
+        height: 110px;
+        background-color: rgb(67, 98, 173);
+        margin-top: 160px;
+      }
+
+      .fs {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0px 20px 0px;
+      }
+
+      .fs i {
+        padding: 0px 20px;
+        font-size: 30px;
+        color: black;
+      }
+
+      .ftext {
+        display: flex;
+        justify-content: center;
+      }
+
+      form {
+        border: 5px solid #f1f1f1;
+        }
+        input[type=text], input[type=password] {
+        width: 100%;
+        padding: 16px 8px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        }
+        button {
+        background-color: #8ebf42;
+        color: white;
+        padding: 14px 0;
+        margin: 10px 0;
+        border: none;
+        cursor: grabbing;
+        width: 100%;
+        }
+        h1 {
+          margin-top: 30px;
+        text-align:center;
+        font-size:18;
+        }
+        button:hover {
+        opacity: 0.8;
+        }
+        .formcontainer {
+        text-align: left;
+        margin: 24px 50px 12px;
+        }
+        .container {
+        padding: 16px 0;
+        text-align:left;
+        }
+        span.psw {
+        float: right;
+        padding-top: 0;
+        padding-right: 15px;
+        }
+        /* Change styles for span on extra small screens */
+        @media screen and (max-width: 300px) {
+        span.psw {
+        display: block;
+        float: none;
+        }
+      }
+
+      @media only screen and (max-width: 1000px) {
+        .sec {
+          flex-wrap: wrap;
+        }
+
+        .header {
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+        }
+        .menu {
+          margin-left: 50px;
+          flex-wrap: wrap;
+          padding: 0px 40px;
+          margin-left: 60px;
+        }
+
+        .mid {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .map iframe {
+          width: 350px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo"><img src="img/logo2.png" alt="" /></div>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tour.html">Tour</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <a href="https://www.facebook.com/"
+            ><i class="fa-brands fa-square-facebook"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      
+      <h1>Login Form</h1>
+      <div class="formcontainer">
+      <hr/>
+      <div class="container">
+        <label for="uname"><strong>Username</strong></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+        <label for="psw"><strong>Password</strong></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+      </div>
+      <button type="submit">Login</button>
+      <div class="container" style="background-color: #eee">
+        <label style="padding-left: 15px">
+        <input type="checkbox"  checked="checked" name="remember"> Remember me
+        </label>
+        <span class="psw"><a href="#"> Forgot password?</a></span>
+      </div>
+    </form>
+    </div>
+
+    <div class="mid">
+      <div class="contact">
+        <h1>EMAIL - travelNZ@gmail.com</h1>
+        <h1>PHONE NO. 000000000001</h1>
+        <h1>
+          110 Lambton Quay, Wellington Central,<br />
+          Wellington 6011
+        </h1>
+      </div>
+
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1888.8370935436037!2d174.77484363882402!3d-41.279660011127525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38ae2a5176db5b%3A0xb18280758660d2a8!2sRanchhod%20Tower!5e0!3m2!1sen!2snz!4v1668552443829!5m2!1sen!2snz"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <div class="fs">
+          <a href="https://www.facebook.com/"
+            ><i class="fa-brands fa-square-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/"
+            ><i class="fa-brands fa-square-instagram"></i
+          ></a>
+
+          <a href="https://www.linkedin.com/login"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+        <p class="ftext">© Copyright 2022 TravelNZ | info@TravelNZ.com</p>
+      </div>
+    </footer>
+  </body>
+</html>

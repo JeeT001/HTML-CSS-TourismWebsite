@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TravelNZ</title>
+    <script
+      src="https://kit.fontawesome.com/dc02f5f2e2.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        padding: 0%;
+        margin: 0%;
+      }
+      .header {
+        display: flex;
+        background-color: rgb(67, 98, 173);
+        align-content: center;
+        justify-content: space-between;
+      }
+
+      @media only screen and (max-width: 811px) {
+        .sec {
+          flex-wrap: wrap;
+        }
+
+        .header {
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+        }
+        .menu {
+          margin-left: 50px;
+        }
+
+        .four {
+          flex-wrap: wrap;
+        }
+      }
+
+      @media only screen and (max-width: 700px) {
+        .header {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .menu {
+          flex-wrap: wrap;
+          padding: 0px 100px;
+          justify-content: center;
+          margin-left: 100px;
+        }
+
+        .menu a {
+          font-size: 20px;
+        }
+
+        .search {
+          flex-wrap: wrap;
+        }
+        .sec {
+          flex-wrap: wrap;
+          padding-bottom: 240px;
+        }
+
+        .sec form {
+          margin: 20px 0px;
+        }
+
+        .ptext {
+          margin-top: 250px;
+        }
+
+        .four {
+          flex-wrap: wrap;
+          margin: -10px 0px;
+        }
+      }
+
+      /*------               www            www               www */
+      .header div {
+        padding: 5px 40px;
+      }
+      .logo img {
+        width: 200px;
+        margin-left: 40px;
+      }
+
+      .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        font-size: 22px;
+        text-decoration: none;
+        margin-right: 70px;
+      }
+
+      .menu a {
+        padding: 0px 50px;
+        text-decoration: none;
+        color: black;
+      }
+
+      .timg img {
+        width: 100%;
+      }
+
+      .search {
+        display: flex;
+        width: 100%;
+        height: 200px;
+        justify-content: center;
+        align-items: center;
+      }
+      .sec {
+        display: flex;
+        background-color: lightgray;
+        width: 80%;
+        height: 80%;
+        justify-content: center;
+        align-self: center;
+      }
+
+      .sec div {
+        display: flex;
+        padding: 0px 40px;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+      }
+
+      .sec div form {
+        background-color: rgb(67, 98, 173);
+        padding: 20px;
+      }
+
+      .butt button {
+        padding: 20px 60px;
+        background-color: rgb(67, 98, 173);
+        font-size: 22px;
+      }
+
+      .h2 {
+        text-align: center;
+        margin-top: 80px;
+      }
+
+      .four {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .four img {
+        margin: 35px 0px 100px 0px;
+        width: 250px;
+        padding: 0px 30px;
+      }
+
+      .footer {
+        display: block;
+        width: 100%;
+        height: 110px;
+        background-color: rgb(67, 98, 173);
+        margin-top: 40px;
+      }
+
+      .fs {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0px 20px 0px;
+      }
+
+      .fs i {
+        padding: 0px 20px;
+        font-size: 30px;
+        color: black;
+      }
+
+      .ftext {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo"><img src="img/logo2.png" alt="" /></div>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tour.html">Tour</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <a href="https://www.facebook.com/"
+            ><i class="fa-brands fa-square-facebook"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="timg">
+      <img src="img/head.jpg" alt="" />
+    </div>
+
+    <div class="search">
+      <div class="sec">
+        <div class="big">
+          <form action="">
+            <label for="">Area</label>
+            <select name="area" id="">
+              <option value="#">North</option>
+              <option value="#">South</option>
+            </select>
+          </form>
+        </div>
+        <div>
+          <form action="">
+            <label for="">Start Time</label>
+            <select name="area" id="">
+              <option value="#">Today</option>
+              <option value="#">This month</option>
+            </select>
+          </form>
+        </div>
+        <div>
+          <form action="">
+            <label for="">End time</label>
+            <select name="area" id="">
+              <option value="#">After 1 week</option>
+              <option value="#">any time</option>
+            </select>
+          </form>
+        </div>
+        <div class="butt"><button>Search</button></div>
+      </div>
+    </div>
+
+    <div class="ptext">
+      <h1 class="h2">POPULAR PLACES</h1>
+
+      <div class="four">
+        <img src="img/1.jpg" alt="" />
+        <img src="img/2.jpg" alt="" />
+        <img src="img/3.jpg" alt="" />
+        <img src="img/4.jpg" alt="" />
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="fs">
+        <a href="https://www.facebook.com/"
+          ><i class="fa-brands fa-square-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com/"
+          ><i class="fa-brands fa-square-instagram"></i
+        ></a>
+
+        <a href="https://www.linkedin.com/login"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+      <p class="ftext">© Copyright 2022 TravelNZ | info@TravelNZ.com</p>
+    </div>
+  </body>
+</html>
